@@ -11,6 +11,33 @@ html {
     scroll-behavior: smooth;
 }
 
+.arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    display: none;
+}
+
+.arrow.active {
+    display: block;
+}
+
+.arrow i {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 header {
     position: relative;
     background-image: url(img/tlo.jpeg);
@@ -555,14 +582,17 @@ section.sixth {
 footer {
     background-color: #2E2E2E;
     height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer p {
     font-size: 1.8rem;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    line-height: 10vh;
     word-spacing: 2px;
+
 }
 
 
@@ -570,7 +600,7 @@ footer p {
 
 section.seventh {
     background-color: #5A5A5A;
-    height: 30vh;
+    height: 20vh;
 }
 
 .wrap_seventh {
@@ -584,4 +614,10 @@ section.seventh {
     color: white;
     font-weight: normal;
     padding: 20px;
+}
+
+.wrap_seventh a {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
 }

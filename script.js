@@ -46,3 +46,18 @@ window.addEventListener('scroll', () => {
         }
     })
 })
+
+
+// ARROW
+
+const div_arrow = document.querySelector('.arrow');
+
+window.addEventListener('scroll', () => {
+    let sizeOnTop = window.scrollY;
+    if (sizeOnTop > 100) {
+        div_arrow.classList.add('active')
+    } else if (sizeOnTop < 100) {
+        div_arrow.classList.remove('active')
+    }
+
+})
