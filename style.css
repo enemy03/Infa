@@ -596,7 +596,7 @@ footer p {
 /* SECTION SEVENTH */
 
 section.seventh {
-    background-color: #A1A1A1;
+    background-color: #a1a1a1;
     height: 15vh;
 }
 
@@ -610,7 +610,7 @@ section.seventh {
     text-align: center;
     color: white;
     font-weight: normal;
-    padding: 20px;
+    padding: 15px;
 }
 
 .wrap_seventh a {
